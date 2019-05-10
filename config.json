@@ -1,0 +1,26 @@
+{
+  "name": "Evolveo Detective D04",
+  "version": "1.0",
+  "slug": "evolveo_detective_d04",
+  "description": "Cameras system integration!",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "ports": {
+    "15002/tcp": 15002
+  },
+  "options": {
+    "mqtt_host": "localhost",
+    "mqtt_port": "1883",
+    "mqtt_username": "admin",
+    "mqtt_password": "admin",
+    "mqtt_root_topic": "cameras"
+  },
+  "schema": {
+    "mqtt_host": "str",
+    "mqtt_port": "int",
+    "mqtt_username": "str",
+    "mqtt_password": "str",
+    "mqtt_root_topic": "str"
+  }
+}
