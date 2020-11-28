@@ -38,9 +38,4 @@ while true;do
         echo ${INPUT}
     fi
 
-    # když pošlu ON, chci poslat po 10 vteřinách poslat OFF pokud nepříjde ON, které dobu prodlouží
-
-    # Při každém ON nastavit čas poslání OFF na t+10
-    # Přidat kontrolu timeoutů a posílat OFF
-
 done
